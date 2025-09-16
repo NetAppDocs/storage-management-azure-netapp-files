@@ -1,0 +1,83 @@
+---
+sidebar: sidebar
+permalink: task-create-volumes.html
+keywords: azure netapp files, create volumes, create nfs volumes, netapp account, capacity pool, create capacity pool, mount path, get mount path, find mount path, mount volume
+summary: After you set up your system, you can create Azure NetApp Files accounts, capacity pools, and volumes.
+---
+
+= Create and mount volumes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+After you set up your system, you can create Azure NetApp Files accounts, capacity pools, and volumes.
+
+== Create volumes
+
+You can create NFS or SMB volumes in a new or existing Azure NetApp Files account.
+
+.Before you begin
+
+* If you want to use SMB, you must have set up DNS and Active Directory.
+
+* When planning to create an SMB volume, you must have a Windows Active Directory server available to which you can connect. You will enter this information when creating the volume.
+
+.Steps
+
+. Open the Azure NetApp Files system.
+
+. Select *Add New Volume*.
+
+. Provide the required information on each page:
+
+* *Azure NetApp Files Account*: Choose an existing Azure NetApp Files account or create a new account. When creating a new account, you must also select the resource group. You can use an existing resource group or create a new one. 
++
+image:screenshot_anf_create_account.png[A screenshot of the fields required to create an Azure NetApp Files account, which includes a name, Azure subscription, location, and resource group.]
+
+* *Capacity Pool*: Select an existing capacity pool or create a new capacity pool.
++
+If you create a new capacity pool, specify the size and https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels[service level^].
++
+The minimum size for a capacity pool is 1 TB.
++
+image:image:screenshot-create-capacity-pool.gif[Screenshot of the create capacity pool menu.]
+
+
+* *Details & Tags*: Enter the volume name and size, the VNet and subnet where the volume should reside, and optionally specify tags for the volume. Choose *Standard* or *Basic* networking. *Standard* supports virtual network (VNet) features while *Basic* has reduced IP limits and no additional VNet features for the volume. For more information, see link:https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features[Configure network features^].
++
+
+image:screenshot-create-volume.gif[Screenshot of create volume options.]
++
+* *Protocol*: Choose the NFS or SMB protocol and enter the required information.
++
+If you choose NFS, you must enter the *Volume path*, choose the *NFS version*, and set the *Export Policy*.
++
+image:screenshot-protocol-nfs.gif[A screenshot of the fields required to set up an NFS volume.]
++
+If you choose SMB, you must enter the **Volume path** then configure SMB connectivity with the **DNS Primary IP Address** and Active Directory configuration details.
++
+image:screenshot-protocol-smb.gif[A screenshot of the fields required to set up an SMB volume.]
+
+. If you want this volume to be created based on a snapshot of an existing volume, select the snapshot from the Snapshot Name drop-down list.
+
+. Select *Add Volume*.
+. After you create the volume, you should proceed to <<Mount volumes,mount the cloud volume>>.
+
+== Mount volumes
+
+Access mounting instructions from within the NetApp Console so you can mount the volume to a host.
+
+.Steps
+
+. In the NetApp Console, open the Azure NetApp Files system.
+
+. Move the cursor over the volume then select the three dots `...` next to the volume status. 
+
+. Select **Mount the volume**.
++
+image:screenshot-volume-options.png[A screenshot of available operations available when you hover the cursor over a volume.]
+
+. Follow the instructions to mount the volume.
