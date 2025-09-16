@@ -43,7 +43,7 @@ If you create a new capacity pool, specify the size and https://learn.microsoft.
 +
 The minimum size for a capacity pool is 1 TB.
 +
-image:image:screenshot-create-capacity-pool.png[Screenshot of the create capacity pool menu.]
+image:screenshot-create-capacity-pool.png[Screenshot of the create capacity pool menu.]
 
 
 * *Details & Tags*: Enter the volume name and size, the VNet and subnet where the volume should reside, and optionally specify tags for the volume. Choose *Standard* or *Basic* networking. *Standard* supports virtual network (VNet) features while *Basic* has reduced IP limits and no additional VNet features for the volume. For more information, see link:https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features[Configure network features^].
