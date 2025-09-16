@@ -1,5 +1,5 @@
 ---
 permalink: bluexp-azure-netapp-files/task-remove-working-env.html
-redirect: console-azure-netapp-files/task-remove-system.html
+redirect: storage-management-azure-netapp-files/task-remove-system.html
 ---
 // confirm 

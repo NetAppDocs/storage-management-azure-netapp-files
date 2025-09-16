@@ -1,5 +1,5 @@
 ---
-permalink: bluexp-azure-netapp-files/task-create-system.html
-redirect: console-azure-netapp-files/task-remove-system.html
+permalink: bluexp-azure-netapp-files/task-create-working-env.html
+redirect: storage-management-azure-netapp-files/task-create-system.html
 ---
 // confirm url 

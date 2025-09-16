@@ -43,7 +43,7 @@ If you create a new capacity pool, specify the size and https://learn.microsoft.
 +
 The minimum size for a capacity pool is 1 TB.
 +
-image:image:screenshot-create-capacity-pool.gif[Screenshot of the create capacity pool menu.]
+image:image:screenshot-create-capacity-pool.png[Screenshot of the create capacity pool menu.]
 
 
 * *Details & Tags*: Enter the volume name and size, the VNet and subnet where the volume should reside, and optionally specify tags for the volume. Choose *Standard* or *Basic* networking. *Standard* supports virtual network (VNet) features while *Basic* has reduced IP limits and no additional VNet features for the volume. For more information, see link:https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features[Configure network features^].
@@ -55,11 +55,11 @@ image:screenshot-create-volume.gif[Screenshot of create volume options.]
 +
 If you choose NFS, you must enter the *Volume path*, choose the *NFS version*, and set the *Export Policy*.
 +
-image:screenshot-protocol-nfs.gif[A screenshot of the fields required to set up an NFS volume.]
+image:screenshot-protocol-nfs.png[A screenshot of the fields required to set up an NFS volume.]
 +
 If you choose SMB, you must enter the **Volume path** then configure SMB connectivity with the **DNS Primary IP Address** and Active Directory configuration details.
 +
-image:screenshot-protocol-smb.gif[A screenshot of the fields required to set up an SMB volume.]
+image:screenshot-protocol-smb.png[A screenshot of the fields required to set up an SMB volume.]
 
 . If you want this volume to be created based on a snapshot of an existing volume, select the snapshot from the Snapshot Name drop-down list.
 
