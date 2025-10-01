@@ -1,0 +1,6 @@
+=== Support for volume templates
+
+A new Application Templates service enables you to set up a volume template for Azure NetApp Files. The template should make your job easier because certain volume parameters will already be defined in the template, such as capacity pool, size, protocol, VNet and subnet where the volume should reside, and more. When a parameter is already predefined, you can just skip to the next volume parameter.
+
+* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html[Learn about Application Templates and how you can use them in your environment^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html[Learn how to create an Azure NetApp Files volume from a template]

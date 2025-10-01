@@ -1,12 +1,45 @@
 settings:
-  name: "Product Name"
+  name: Azure NetApp Files
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
-
-sidebar: 
+  rss_page: "whats-new.html"
+sidebar:
   entries:
-  - title: Legal notices
-    url: /legal-notices.html
+   - title: Azure NetApp Files docs
+     url: /index.html
+   - title: Release notes
+     entries:
+      - title: What's new
+        url: /whats-new.html
+   - title: Get started
+     entries:
+     - title: Learn about Azure NetApp Files
+       url: /concept-azure-netapp-files.html
+     - title: Getting started workflow
+       url: /task-quick-start.html
+     - title: Set up a Microsoft Entra application
+       url: /task-set-up-azure-ad.html
+     - title: Create a system
+       url: /task-create-system.html
+   - title: Use Azure NetApp Files
+     entries:
+        - title: Create and mount volumes
+          url: /task-create-volumes.html
+        - title: Manage existing volumes
+          url: /task-manage-volumes.html
+        - title: Remove Azure NetApp Files
+          url: /task-remove-system.html
+   - title: Knowledge and support
+     entries:
+        - title: Register for support
+          url: /task-support-registration.html
+        - title: Get help
+          url: /task-get-help.html
+   - title: Legal notices
+     url: /legal-notices.html
+product-family:
+  name: Storage Management
+  repo: storage-management-family
