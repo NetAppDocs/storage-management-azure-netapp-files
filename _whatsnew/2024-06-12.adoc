@@ -1,0 +1,11 @@
+=== New permission required
+
+The following permission is now required to manage Azure NetApp Files volumes from BlueXP:
+
+Microsoft.Network/virtualNetworks/subnets/read
+
+This permission is required to read a virtual network subnet.
+
+If you're currently managing Azure NetApp Files from BlueXP, you need to add this permission to the custom role that's associated with the Microsoft Entra application that you previously created.
+
+https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.html[Learn how to set up a Microsoft Entra application and view the custom role permissions].

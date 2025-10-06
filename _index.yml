@@ -1,14 +1,28 @@
+# Start snippet: landing page
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: Azure NetApp Files documentation
+  lead: Azure NetApp Files is a Microsoft Azure native, high performance file storage service for your core business applications. This documentation describes how to set up and manage Azure NetApp Files by using the NetApp Console
+  summary: Azure NetApp Files is a Microsoft Azure native, high performance file storage service for your core business applications. This documentation describes how to set up and manage Azure NetApp Files by using the NetApp Console.
+  keywords: Azure NetApp Files, netapp console
+  tiles:
+    - title: Get started
+      links:
+      - title: Learn about Azure NetApp Files
+        url: concept-azure-netapp-files.html
+      - title: Quick start
+        url: task-quick-start.html
+    - title: Use Azure NetApp Files
+      links:
+        - title: Create volumes
+          url: task-create-volumes.html
+        - title: Manage volumes
+          url: task-manage-volumes.html
+    - title: Blogs & community
+      links:
+       - title: NetApp Console
+         url: https://www.netapp.com/console
+       - title: NetApp Data Services
+         url: https://www.netapp.com/data-services/
+       - title: NetApp Community 
+         url: https://community.netapp.com/
+          # End snippet
