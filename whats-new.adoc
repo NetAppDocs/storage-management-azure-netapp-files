@@ -15,8 +15,6 @@ summary: Learn what's new with Azure NetApp Files support in the NetApp Console.
 [.lead]
 Learn what's new with Azure NetApp Files in the NetApp Console.
 
-//tag::whats-new[]
-
 == 06 October 2025
 include::_whatsnew/2025-10-06.adoc[]
 
@@ -30,8 +28,6 @@ include::_whatsnew/2024-06-12.adoc[]
 
 == 22 April 2024
 include::_whatsnew/2024-04-22.adoc[]
-
-//end::whats-new[]
 
 == 11 April 2021
 
